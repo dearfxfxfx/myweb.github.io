@@ -1,0 +1,213 @@
+.imgs {
+    --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+    --m:
+      left   var(--_i,0%) top    var(--_g),
+      bottom var(--_i,0%) left   var(--_g),
+      top    var(--_i,0%) right  var(--_g),
+      right  var(--_i,0%) bottom var(--_g);
+    -webkit-mask: var(--m);
+            mask: var(--m);
+    outline: 100vmax solid #00B4FF;
+    outline-offset: -100vmax;
+    transition: .3s linear;
+    cursor: pointer;
+  }
+  .imgs:hover {
+    --_i: 10%;
+    outline-color: #0000;
+  }
+
+ 
+.content{
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-direction: row;
+    margin-top: 100px;
+  
+   
+
+}
+
+.left-content{
+
+flex: 1;
+   
+}
+.right-content{
+
+    flex: 1;
+    margin-left: 30px;
+    white-space: nowrap;
+    line-height: 60px;
+    margin-top: -35px;
+   
+    
+  
+}
+
+.image{
+
+    width: 350px; border-radius: 5px; height: 300px;margin-left: 50px;
+}
+
+.gallery {
+   
+    
+    display: grid;
+    clip-path: inset(1px); /* to avoid visual glitchs */
+
+    left: 50%;
+  }
+
+
+
+
+
+
+.name{
+
+    font-family: 'Brush Script MT', cursive;
+
+}
+
+
+.major{
+
+    font-weight: bold; font-size: 30px; color: aliceblue;
+}
+
+
+.follows{
+
+    font-weight: bold; font-size: 30px; color: aliceblue;
+}
+
+
+
+.follow-me{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        
+
+}
+
+.f{
+
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+
+.link{
+
+
+    transition: margin 0.4s ;
+    background-color: brown;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.link:hover{
+
+    margin:7px;
+    background-color: crimson;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:594px){
+
+    
+
+    .image {
+
+
+                width: 150px;
+                margin-left: 0px;
+
+    }
+
+
+    .follows,.name,.major{
+
+        font-size: 18px;
+    }
+
+   
+  
+
+
+  }
+
+    
+  @media (min-width:595px) and (max-width:999px){
+
+    
+
+    .right-content {
+
+
+                
+        margin-left: 30px;
+        margin-top: -100px;
+        padding: 10px;
+}
+.follow-me{
+
+
+             
+    margin-left: -150px;
+ }
+
+
+  @media (min-width:1000px){
+
+    
+
+    .right-content {
+
+
+                
+                margin-left: 30px;
+                margin-top: -100px;
+
+    }
+
+}
+.follow-me{
+
+
+             
+   margin-left: -100px;
+}
+
+
+
+  
+
+}
+
+
+
